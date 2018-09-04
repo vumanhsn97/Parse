@@ -13,6 +13,8 @@ public class BaseFragment extends Fragment{
         fragmentTransaction.replace(id, a);
         if(backstack == true){
             fragmentTransaction.addToBackStack("");
+        } else {
+            fragmentTransaction.disallowAddToBackStack();
         }
         fragmentTransaction.commit();
     }

@@ -30,6 +30,8 @@ public class LoginFragment extends BaseFragment implements ViewLogin{
     TextView logfail;
     String username, password;
     ProgressDialog progressDialog;
+    PresenterLogin presenterLogin;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -37,7 +39,7 @@ public class LoginFragment extends BaseFragment implements ViewLogin{
         ButterKnife.bind(this, view);
         AppCompatActivity activity = (AppCompatActivity) getActivity();
         activity.getSupportActionBar().hide();
-        final PresenterLogin presenterLogin = new PresenterLogin(this, getActivity());
+        presenterLogin = new PresenterLogin(this, getActivity());
         logreg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mem_image"
+        android:layout_width="85dp"
+        android:layout_height="84dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:id="@+id/mem_name"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="138dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="233dp"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/mem_email"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_marginEnd="-208dp"
+        android:layout_toStartOf="@+id/mem_name" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="194dp"
+        android:text="Gender" />
+
+    <TextView
+        android:id="@+id/mem_gender"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_marginEnd="-5dp"
+        android:layout_toStartOf="@+id/mem_name" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginBottom="124dp"
+        android:text="Age" />
+
+    <TextView
+        android:id="@+id/mem_age"
+        android:layout_width="68dp"
+        android:layout_height="18dp"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_toStartOf="@+id/mem_name" />
+</RelativeLayout>
