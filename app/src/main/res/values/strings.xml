@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MVParse</string>
+    //Login fail
+    <string name="user_login_fail">Wrong! User is not empty</string>
+    <string name="pass_login_fail">Wrong! Password is not empty</string>
+    <string name="user_pass_login_fail">User or password is wrong</string>
+    <string name="progress_login_message">Loading ...</string>
+    //Sign Up
+    <string name="pass_confirm_register_fail">Wrong! Confirm Password is not empty</string>
+    <string name="user_register_fail">Wrong! User is not empty</string>
+    <string name="pass_register_fail">Wrong! Password is not empty</string>
+    <string name="email_register_fail">Wrong! Email is not empty</string>
+    <string name="pass_repass_register_fail">Wrong! Confirm Password needs to be like Password</string>
+    <string name="user_register_exist">Wrong! Email is exist</string>
+    <string name="email_register_wrong">Email is wrong</string>
+    <string name="progress_register_message">Loading ...</string>
+
+</resources>

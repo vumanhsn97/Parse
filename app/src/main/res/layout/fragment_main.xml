@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnlog"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:background="@drawable/buttonlogin"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <Button
+        android:id="@+id/btnreg"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonregister"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Register"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+</LinearLayout>
