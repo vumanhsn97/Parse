@@ -85,7 +85,7 @@ public class MemberFragment extends BaseFragment {
                 break;
 
             case R.id.changeinfor:
-                changeFragment(new ChangeInforFragment(), R.id.main, true);
+                changeFragment(new GalleryFragment(), R.id.main, true);
         }
         return super.onOptionsItemSelected(item);
     }

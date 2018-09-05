@@ -1,7 +1,9 @@
 package com.manh.vumanh.mvparse.views;
 
+import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -43,5 +45,14 @@ public class MainActivity extends AppCompatActivity{
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.main, new SplashFragment());
         fragmentTransaction.commit();
+        Intent intent = new Intent();
+        setResult(RESULT_OK);
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
     }
 }
+
